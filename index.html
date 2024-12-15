@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work-Life Balance Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Work-Life Balance Calculator</h1>
+    <form id="balance-form">
+      <label>Work Hours/Week:</label>
+      <input type="number" id="work-hours" min="0" max="168" required>
+      <label>Sleep Hours/Week:</label>
+      <input type="number" id="sleep-hours" min="0" max="168" required>
+      <label>Exercise Hours/Week:</label>
+      <input type="number" id="exercise-hours" min="0" max="168" required>
+      <label>Family/Social Hours/Week:</label>
+      <input type="number" id="family-hours" min="0" max="168" required>
+      <label>Personal/Leisure Hours/Week:</label>
+      <input type="number" id="personal-hours" min="0" max="168" required>
+      <label>Commuting Hours/Week:</label>
+      <input type="number" id="commuting-hours" min="0" max="168" required>
+      <label>Vacation/Weekend Hours/Week:</label>
+      <input type="number" id="vacation-hours" min="0" max="168" required>
+      <button type="button" id="calculate-btn">Calculate</button>
+    </form>
+    <div class="result">
+      <div class="progress-circle" id="progress-circle">
+        <div class="circle-text" id="circle-text">0%</div>
+      </div>
+      <div id="result-details"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <p id="signature">Signé, [Fatma HAIDARI]</p>
+
+</body>
+</html>
